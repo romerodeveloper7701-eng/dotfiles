@@ -11,3 +11,7 @@ function ls {
     Get-ChildItem @args
 }
 
+
+# fastfetch con logo personalizado
+function fastfetch { fastfetch.exe --logo-type file-raw --logo "$HOME\dotfiles\logo.txt" --logo-padding-top 8 --logo-padding-left 2 @args }
+fastfetch
